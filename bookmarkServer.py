@@ -31,7 +31,6 @@ def CheckURI(uri, timeout=5):
     False if that GET request returns any other response, or doesn't return
     (i.e. times out).
     '''
-    # 1. Write this function.  Delete the following line
     try:
         r = requests.get(uri, timeout=timeout)
         return r.status_code == 200
